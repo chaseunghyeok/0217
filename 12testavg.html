@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>12testavg.html</title>
+    <script>
+        function mypass(){
+            var kor=0, eng=0, hap=0, avg=0, msg='', grade='F', result='';
+            var info='';
+            var result='';
+
+            kor = 90 ;
+            eng = 40 ;
+            hap = kor + eng ;
+            avg = hap / 2 ;
+             
+            if(avg>=70){msg='축합격';}
+            else{msg = '재시험' ;}
+
+            // var info='' ; 이거잇으면 인포만 없으면 같이 가능
+            info = (avg>=70) ? 'pass' : 'failed' ; //삼항 연산
+            // info = (avg>=70) ? 5 : -1 ; //삼항 연산
+          
+
+            result='총점 = ' +hap+ ' 평균 = '+ avg+ ' 결과 = ' + msg ;
+            result +=' 가산점= ' + info ;
+            // result='총점 = ' +hap+ ' 평균 = '+ avg+ ' 결과 = ' +msg ;
+            // document.getElementById('display').innerHTML=info;
+            document.getElementById('display').innerHTML=result;
+
+        }
+    </script>
+</head>
+<body>
+    <div id="display">
+        <img src="./images/cherry.png" width="200" height="150">
+    </div>
+    
+    <h2>12testavg.html</h2>
+    
+    <button onclick="mypass()"> 점수확인 </button>
+    
+    
+</body>
+</html>

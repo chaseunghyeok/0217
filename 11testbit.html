@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>11testbit.html</title>
+    <script>
+        function mybit(){
+            const PI=3.1415 ; // 상수
+            const SM='박진영'; // 상수
+            const NT='대한민국';
+            document.write(PI, '<br>') ;
+            //PI=7.8;
+            //document.write(PI) ; // 재지정값 출력 안됨
+            //PI=7.8 ; 지정한값말고 다른값 지정 불가능. 
+            //321p. 데이터-primitive(숫자,문자,불)/object(배열)
+            var temp2; //값정의안됨
+            document.write(temp2);// undefined
+            document.write('<br>');
+
+            var a=1, b=3, hap=0, gob=0, nmg=0;
+            //산술연산
+            hap = a+b ;
+            gob = a*b ;
+            nmg = a%b ;
+
+            //비트연산
+            var bit1 = a & b ; //양쪽참 = 1일때
+            var bit2 = a | b ; //양쪽중 하나라도 만족하면 참 = 1일때
+            document.write(bit1, '<br>'); //0
+            document.write(bit2, '<br>'); //3
+            document.write(gob, '<br>'); //12
+        }
+    </script>
+</head>
+<body>
+    <div id="display">
+    </div>
+    
+    <h2>11testbit.html</h2>
+    
+    <button onclick="mybit()"> 비트 </button>
+    
+    
+</body>
+</html>

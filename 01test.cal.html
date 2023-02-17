@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>01testcal.html</title>
+<style>
+  *{font-size: 20pt;}
+</style>
+
+<script>
+  function mytest(){
+    var a=5, b=5, sumA=0, sumB=0;
+    // 단독일땐 a++ ++a -> 1증가값이라 상관x
+    sumA = (a++) + 7; // 연산 후 증가 a++ 5+7
+    sumB = (++b) + 7; // 증가 후 연산 ++b 6+7
+    document.write('<h2>a = ', a , ' sumA = ', sumA ,'</h2>');
+    document.write('<h2>b = ', b , ' sumB = ', sumB ,'</h2>');
+  }
+</script>
+</head>
+<body>
+    
+    <h2> 01testcal.html </h2>
+    <button onclick="mytest()">계산결과보기</button>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>15testif.html</title>
+    <script>
+        function mypass(){
+            var kor=0, eng=0, hap=0, avg=0, msg='', result='';
+
+            kor = 100 ; 
+            eng = 45 ;
+            hap = kor + eng ;
+            avg = hap / 2 ;
+
+            if(avg>=70 && kor>=50 && eng>=50){msg = '축합격';}
+            else{msg = '재시험' ;}
+            
+            result= '<h2>국어 = '+kor+' 영어= '+eng ;
+            result+= '<br>총점 = ' +hap+ ' 평균 = '+ avg+ ' 결과 = ' + msg+'</h2>' ;
+            document.getElementById('display').innerHTML=result;
+        }
+    </script>
+</head>
+<body>
+    <div id="display">
+        <img src="./images/d33.jpg" width="200" height="150">
+    </div>
+    
+    <h2>15testif.html</h2>
+    
+    <button onclick="mypass()"> 점수확인 </button>
+    
+    
+</body>
+</html>
